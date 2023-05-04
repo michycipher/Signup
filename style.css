@@ -1,0 +1,237 @@
+/* font-family: 'Cookie', cursive; */
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400&family=Tangerine&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+}
+
+aside {
+    background: #F2D086;
+    height: 100vh;
+    max-width: 55%;
+    color: #896527;
+    position: fixed;
+}
+
+main aside .aside-div {
+    padding: 4rem 3rem;
+    max-width: 500px;
+    height: 100vh;
+}
+
+main aside div>img {
+    object-fit: none;
+    object-position: -110px 0;
+    padding-bottom: 100px;
+}
+
+main aside div p {
+    font-family: 'Tangerine', cursive;
+    font-size: 2.5rem;
+
+}
+
+main aside div h2 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    max-width: 300px;
+}
+
+main aside div h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+main aside div a {
+    color: #896527;
+}
+
+/* SIGN UP SECTION */
+section {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    width: 60%;
+    left: 37%;
+}
+
+section div:first-child ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 50px 50px;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    text-align: center;
+   }
+
+section div:first-child nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 2px solid #90CDCD;
+    border-radius: 12px;
+    margin-left: 15px;
+    color: #000;
+}
+
+.sign-up {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 7rem 5rem;
+}
+
+.sign-up h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+ h2 span {
+    background: -webkit-linear-gradient(#90CDCD, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:rgba(144, 205, 205, 0.3);
+    font-family: 'Cookie', cursive;
+  }
+
+form .first-form-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-form-div label,
+.first-form-div input {
+    display: block;
+
+}
+
+input:focus,
+input:hover {
+    background-color: #fff;
+    border: 1px solid rgb(144, 205, 205);
+    box-shadow: 0 0 25px 0 rgba(144, 205, 205, 1);
+    ;
+}
+
+.gege,
+select {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+}
+
+.long {
+    width: 100%;
+}
+
+.pd {
+    padding-top: 30px;
+}
+
+.pd-b {
+    padding-bottom: 40px;
+    font-size: 13px;
+}
+
+.sign-up .norm-link {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #90CDCD;
+}
+
+span a {
+    text-decoration: none;
+}
+
+select {
+    text-align: center;
+    margin-left: 1rem;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 1459px) {
+    .gege {
+        padding: 10px 5px;
+    }
+
+    .sign-up {
+        padding: 0 0.5rem;
+        margin: 0 140px 40px;
+    }
+
+    .pd-b {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    aside {
+        display: none;
+    }
+
+    main {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+        left: 0;
+        position: none;
+    }
+
+    .first-form-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-form-div input {
+        width: 100%;
+    }
+
+    .pd-1 {
+        padding-top: 30px;
+    }
+
+    .sign-up {
+        padding: 0 0.5rem;
+        margin: 0 auto 40px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        /* color: #90CDCD; */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    section div:first-child nav {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    section div:first-child nav a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    section div:first-child nav p {
+        font-size: 12px;
+    }
+
+    section div:first-child nav {
+        margin: center;
+    }
+
+}
